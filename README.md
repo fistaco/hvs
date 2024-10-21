@@ -32,4 +32,10 @@ tā  (他)
 he
 False (similarity score = 22)
 All translations:  ['he; him (used for either sex when the sex is unknown or unimportant)', "(used before sb's name for emphasis)", '(used as a meaningless mock object)', '(literary) other']
-```
+``
+
+# Prioritised features
+These features would likely improve the learning experience for this tool's target audience:
+- [ ] Provide example sentences along with the definitions
+- [ ] Include direct definitions in the "meanings" section for each entry
+- [ ] Implement a spaced repetition system that's at least active during runtime
