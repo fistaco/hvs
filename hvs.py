@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import os
 import random
 from fuzzywuzzy import fuzz
 
@@ -10,7 +11,8 @@ RESET = "\033[0m"
 
 
 if __name__ == "__main__":
-    with open('complete-hsk-vocabulary/by-level/new/1.json', 'r', encoding='utf-8') as file:
+    hsk_vocab_filepath = os.path.abspath(os.path.dirname(__file__)) + os.sep + "complete-hsk-vocabulary/by-level/new/1.json"
+    with open(hsk_vocab_filepath, 'r', encoding='utf-8') as file:
         vocab_items = json.load(file)
 
     while True:
