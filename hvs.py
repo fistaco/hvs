@@ -41,6 +41,10 @@ def quiz(vocab_entries):
     """
     Quiz the user on the given vocabulary entries.
     """
+    if not vocab_entries:
+        print("No vocabulary entries to quiz on! Exiting.")
+        exit(0)
+
     num_correct = 0
     num_total = 0
     incorrect_entries = []
